@@ -1,5 +1,9 @@
 const API_KEY = "cfc27e75405e43c6af88821be8dd8586";
-const url = "https://newsapi.org/v2/everything?q=";
+// const url = "https://newsapi.org/v2/everything?q=";
+//const newsapi = new NewsAPI('cfc27e75405e43c6af88821be8dd8586', { corsProxyUrl: 'https://cors-anywhere.herokuapp.com/' });
+
+const proxyUrl = "https://cors-anywhere.herokuapp.com/"
+const url = `${proxyUrl}https://newsapi.org/v2/everything?q=`;
 
 window.addEventListener("load", () => fetchNews("India"));
 
